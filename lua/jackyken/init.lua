@@ -1,2 +1,2 @@
+require("jackyken.set")
 require("jackyken.remap")
-print("hello from jackyken")
