@@ -20,4 +20,15 @@ require('mason-lspconfig').setup({
     },
 })
 
+-- don't add this function in the `on_attach` callback.
+-- `format_on_save` should run only once, before the language servers are active.
+lsp_zero.format_on_save({
+  format_opts = {
+    async = false,
+    timeout_ms = 10000,
+  },
+  servers = {
+    ['rust_analyzer'] = {'rust'},
+  }
+})
 
