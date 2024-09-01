@@ -19,4 +19,4 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 8
 
 vim.g.mapleader = " "
-
+vim.g.loaded_matchparen = 1
