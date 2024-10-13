@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use { 
+  use {
 	  'olivercederborg/poimandres.nvim',
 	  config = function()
 		  require('poimandres').setup {
