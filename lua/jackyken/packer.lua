@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
       "simrat39/inlay-hints.nvim"
   }
 
+  use('sbdchd/neoformat')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
