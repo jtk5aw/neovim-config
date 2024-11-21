@@ -13,16 +13,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use {
-	  'olivercederborg/poimandres.nvim',
-	  config = function()
-		  require('poimandres').setup {
-			  -- leave this setup function empty for default config
-			  -- or refer to the configuration section
-			  -- for configuration options
-		  }
-	  end
-  }
+  use { 'sainnhe/everforest', as = "everforest" }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
